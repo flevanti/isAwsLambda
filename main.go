@@ -28,11 +28,8 @@ func IsItInitialised() bool {
 }
 
 func initialise() {
-	if isInitialised {
-		return
-	}
-
-	//default value
+	//default values
+	//bool vars are initialised to false by default, this is just for clarity.
 	isLambda = false
 	isDocker = false
 	isAWS = false
