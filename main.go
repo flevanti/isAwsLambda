@@ -7,18 +7,19 @@ var isDocker bool
 var isAWS bool
 var isInitialised bool
 
-func IsItLambda() bool {
+func init() {
 	initialise()
+}
+
+func IsItLambda() bool {
 	return isLambda
 }
 
 func IsItDocker() bool {
-	initialise()
 	return isDocker
 }
 
 func IsItAWS() bool {
-	initialise()
 	return isAWS
 }
 
